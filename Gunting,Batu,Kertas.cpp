@@ -33,7 +33,8 @@ int rule(char p, char c){
 }// Jika -1 maka kalah, jika 1 maka menang, jika -2 tidak ada pilihan yang benar
 
 int main(){
-	int scorePlayer, scoreComputer;
+	int scorePlayer = 0;
+	int scoreComputer = 0;
     char computer;
     char player;
     char playmore;
