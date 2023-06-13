@@ -33,6 +33,7 @@ int rule(char p, char c){
 }// Jika -1 maka kalah, jika 1 maka menang, jika -2 tidak ada pilihan yang benar
 
 int main(){
+	int scorePlayer, scoreComputer;
     char computer;
     char player;
     char playmore;
@@ -90,10 +91,16 @@ int main(){
         if(result == 1){
             cout << "\t\t\t\t";
             cout << "You won! Hurray" << endl;
+            //penambahan score player
+            scorePlayer++;
+            cout << "\t\t\t\t[Player] : "<<scorePlayer<<" [Computer] : "<<scoreComputer<<endl;
         }
         else if(result == -1){
             cout << "\t\t\t\t";
             cout << "You lose! Bad Luck" << endl;
+            //penambahan score computer
+            scoreComputer++;
+            cout << "\t\t\t\t[Player] : "<<scorePlayer<<" [Computer] : "<<scoreComputer<<endl;
         }
         else if(result == -2){
         	cout << "\t\t\t\t";
@@ -103,6 +110,7 @@ int main(){
         else{
             cout << "\t\t\t\t";
             cout << "Woah! That's Tie!" << endl;
+            cout << "\t\t\t\t[Player] : "<<scorePlayer<<" [Computer] : "<<scoreComputer<<endl;
         }
 
         // Menanyakan apakah pemain ingin bermain lagi
