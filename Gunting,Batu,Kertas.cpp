@@ -118,7 +118,7 @@ int main(){
         cout << "\t\t\t\t";
         cout << "Do you want to Play Again?" << endl;
         cout << "\t\t\t\t";
-        cout << "Note: Press 'n' to exit! Press Anything to continue: ";
+        cout << "Note: Press 'n' to exit! Press 'y' to continue: ";
         cin >> playmore;
 
         // Menampilkan pemisah antara putaran permainan
@@ -127,7 +127,7 @@ int main(){
             cout << "-";
         }
         cout << endl;
-    } while(playmore != 'n');
+    } while(playmore != 'n' || playmore == 'y');
 
     return 0;
 }
